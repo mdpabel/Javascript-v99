@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event delegation</title>
+
+    <style>
+        .product {
+            width: calc(20% - 1em);
+            height: 200px;
+            border: 1px solid sienna;
+            cursor: pointer;
+        }
+        #root {
+            padding-top: 1em;
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .selected {
+            background-color: chocolate;
+        }
+
+    </style>
+
+    <script defer src="app.js"></script>
+  <body>
+    <div id="root">
+      <div id="product1" class="product"></div>
+      <div id="product2"  class="product"></div>
+      <div id="product3"  class="product"></div>
+      <div id="product4"  class="product"></div>
+      <div id="product5"  class="product"></div>
+      <div id="product6"  class="product"></div>
+      <div id="product7"  class="product"></div>
+    </div>
+  </body>
+</html>
